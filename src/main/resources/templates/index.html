@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head th:replace="fragments :: page_head('weshopify-platform-dashboard', 'none')" />
+<body>
+<div class="container-fluid">
+	<div th:replace="navigation :: menu"></div>
+	<div>
+		<!--<h2>Welcome To Weshopify-Platform-A Unified Platform for Retail Business</h2>
+		Welcome 
+		<a th:href="@{/account}" 
+			sec:authentication="principal.fullname"></a>	
+		<span sec:authentication="principal.authorities"></span>-->	
+		
+		<img th:src="@{/images/home-page.png}" />
+	</div>
+
+	<!--<div th:replace="fragments :: footer"></div>-->
+	
+</div>
+</body>
+</html>
